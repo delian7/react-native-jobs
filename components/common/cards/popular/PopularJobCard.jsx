@@ -11,7 +11,7 @@ const PopularJobCard = ({item, selectedJob, handleCardPress}) => {
       style={styles.container(selectedJob, item)}
       onPress={() => handleCardPress(item)}
     >
-      <TouchableOpacity
+      <View
         style={styles.logoContainer(selectedJob, item)}
       >
         <Image
@@ -21,7 +21,7 @@ const PopularJobCard = ({item, selectedJob, handleCardPress}) => {
           resizeMode='contain'
           style={styles.logoImage}
         />
-      </TouchableOpacity>
+      </View>
       <Text style={styles.companyName} numberOfLines={1}>{item.employer_name}</Text>
 
       <View style={styles.infoContainer}>

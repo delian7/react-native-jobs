@@ -37,7 +37,6 @@ const useFetch = (endpoint, query) => {
   }, [])
 
   const refetch = () => {
-    isLoading(true);
     fetchData();
   }
 
